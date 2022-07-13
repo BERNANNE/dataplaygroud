@@ -20,5 +20,5 @@ SELECT DATE_PART('month',occurred_at) AS transaction_month, DATE_PART('year',occ
 SELECT DATE_PART('dow',occurred_at) AS date_week,TO_CHAR(sum(total_usd),'9,999,999')AS amount_sold
 FROM orders
 GROUP BY 1
-ORDER by 2 DESC
+ORDER by 1 DESC
 
